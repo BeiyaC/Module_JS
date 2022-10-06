@@ -11,55 +11,63 @@
 
         /* Section 1 */   
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+        var name = "Joe"; //Declaring variable with sting as value
+        var city = 'London'; //Declaring variable with sting as value
+        var age = 32; //Declaring variable with int as value
+        var isRed = true; //Declaring variable with boolean as value
+        var isOld = age > 80; //Declaring variable with boolean as value
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; //Declaring variable with array as value
 
-        function info(height, weight) {
-            if (height > 180) {
-                console.log('Vous êtes grand');
+        function info(height, weight) { // Create function with two parameters
+            if (height > 180) { //Condition to test if height is bigger than int
+                console.log('Vous êtes grand'); // Write a string in console
             }
-            if (weight < 0) {
-                console.log('oups, there is a problem');
-            } else if ( weight < 15) {
-                console.log('Are you that slim ?')
-            } else {
-                console.log('Good !')
+            if (weight < 0) { // Condition to test if weight is smaller than int
+                console.log('oups, there is a problem'); // Write a string in console
+            } else if ( weight < 15) { // Condition if the first condition is false
+                console.log('Are you that slim ?') // Write a string in console
+            } else { // Condition if the two first conditions are false
+                console.log('Good !') // Write a string in console
             }
         }
 
-        info(165, 45);
+        info(165, 45); // Use function info with two parameters int
 
-        var myHeight = 175;
-        var myWeight = 86;
+        var myHeight = 175; // Declaring variable with int as value
+        var myWeight = 86; // Declaring variable with int as value
 
-        info(myHeight, myWeight);
+        info(myHeight, myWeight); // Use function info with those two variables as parameters
 
-        info(myHeight + 15, myWeight - 100);
+        info(myHeight + 15, myWeight - 100); // Use function info with those two variables as parameters and soustract or add int
 
-        function toUpper(variable) {
-            return variable.toUpperCase();
+        function toUpper(variable) { // Create function with one parameter
+            return variable.toUpperCase(); // Return parameter concatenate with function
         }
 
-        var upperName = toUpper(name);
+        var upperName = toUpper(name); // Declaring variable with function with one parameter as value
 
-        for (i = 0; i < 3; i = i + 1) {
-            console.log(previousJobs[i]);
+        for (i = 0; i < 3; i = i + 1) { // Loop until i is smaller than three
+            console.log(previousJobs[i]); // Write in console an array
         }
 
         /* Section 2: */
 
-        // afficher la ville dans laquele Joe vit.     
+        // afficher la ville dans laquelle Joe vit.
+
+        console.log(city);
 
         // afficher si Joe est roux ou pas.
 
+        if(isRed){
+            console.log('Joe is red')
+        } else {
+            console.log('Joe isn\'t red')
+        }
+
         /* Section 3 */
 
-        // console.log(myVariable);
+        //console.log(myVariable); // Error because this variable isn't declared
 
         </script>
 
