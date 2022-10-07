@@ -29,7 +29,9 @@ function findWinner(playerChoice, computerChoice) {
 
     if (playerChoice === computerChoice) {
         return 'Tied';
-    } else if (playerChoice === 'rock' && computerChoice === 'scissors' || playerChoice === 'scissors' && computerChoice === 'paper' || playerChoice === 'paper' && computerChoice === 'rock') {
+    } else if (playerChoice === 'rock' && computerChoice === 'scissors'
+                || playerChoice === 'scissors' && computerChoice === 'paper'
+                || playerChoice === 'paper' && computerChoice === 'rock') {
         return 'Won';
     } else {
         return 'Lost';
